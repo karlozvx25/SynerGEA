@@ -1,0 +1,97 @@
+[
+  {
+    "path": "dist/assets/bienvenida.jpg",
+    "bytes": 2890420,
+    "sha256": "5819de9795f5daf74d96cb50868b5ece9d307930a17822586cf1b4ad53b66dc4"
+  },
+  {
+    "path": "dist/assets/colaboracion.jpg",
+    "bytes": 28949,
+    "sha256": "b8270d71b4fc628b542cdac5f57f5ce8871d7d2924e0f3c6ab8cb5f5adca2987"
+  },
+  {
+    "path": "dist/assets/colaboracion.mp4",
+    "bytes": 557090,
+    "sha256": "f66a4a0a0efa669e9e9bface584fa3e3b1339db6f81d813a00869ba4a67b37ab"
+  },
+  {
+    "path": "dist/assets/comunidad.jpg",
+    "bytes": 26573,
+    "sha256": "ac845e7f359d850dd522f158ad9783578d8a37d49798a3b5ed4ff1e344ef3a80"
+  },
+  {
+    "path": "dist/assets/comunidad.mp4",
+    "bytes": 236282,
+    "sha256": "8b3eb535445a2483ab25f4e124a603323aa2cef1c730a74f10da962eab8117b5"
+  },
+  {
+    "path": "dist/assets/conexion-digital.jpg",
+    "bytes": 1802497,
+    "sha256": "af2e6b6a2cde4330a3ee65d0453d7f5815a7ccf07f8bec1fd5859c12da777c00"
+  },
+  {
+    "path": "dist/assets/conversacion.jpg",
+    "bytes": 33440,
+    "sha256": "a31c42906b0865112226c143b40db4720f662822d121651b331c03a2ef2234a9"
+  },
+  {
+    "path": "dist/assets/conversacion.mp4",
+    "bytes": 530534,
+    "sha256": "f737d8d7cb353b2d52b9940ec4dbc14fd3c9c50c0fb9c7908299b27895d4de9f"
+  },
+  {
+    "path": "dist/assets/encuentro.jpg",
+    "bytes": 40824,
+    "sha256": "9f6e55297cb5a6855d60949160e62b704b58463ac9b49612e6bbcd7cce58a1d1"
+  },
+  {
+    "path": "dist/assets/encuentro.mp4",
+    "bytes": 1087732,
+    "sha256": "be762cd624a6ce976a9fb9ecae3830ae2a5ae4d8db75ab08121e53612a68069a"
+  },
+  {
+    "path": "dist/assets/favicon.svg",
+    "bytes": 410,
+    "sha256": "2625bfc86376bf6be67c01fb88252d1d900b3c7209c08b94a802d088b78193ef"
+  },
+  {
+    "path": "dist/assets/logo.png",
+    "bytes": 952687,
+    "sha256": "96ff4c433b219841327929b7b22a4602186dfa276cd912be3ecdc4894f843670"
+  },
+  {
+    "path": "dist/assets/pilar-conecto.png",
+    "bytes": 1586856,
+    "sha256": "8813879af1b1a202730941b24cb02a947de1f186ec7478103647ef26a7825a58"
+  },
+  {
+    "path": "dist/assets/pilar-crezco.png",
+    "bytes": 1609110,
+    "sha256": "11e5f2f67e65e3cd2097b8a89b3965215bfa9255d5e4a1d6738b04b513e11aa8"
+  },
+  {
+    "path": "dist/assets/pilar-pertenezco.png",
+    "bytes": 1647383,
+    "sha256": "e2b695cb4f6022e4f2bfa975e7870e7d59d727e3b5c6634c6c1968e5ea1b2d61"
+  },
+  {
+    "path": "dist/assets/region.jpg",
+    "bytes": 11994,
+    "sha256": "a93d80ca0667eb2c8e7f034ef84238d47f82fd0df16d3a2d804ac87e3d6ac216"
+  },
+  {
+    "path": "dist/assets/region.mp4",
+    "bytes": 1286585,
+    "sha256": "6c2ab4fb1d3a8c565e87795591f06208eda078913e415bc9863050aa5c480b72"
+  },
+  {
+    "path": "dist/assets/tecnologia.jpg",
+    "bytes": 47796,
+    "sha256": "5f40f84561dd4f3bec8f5e1041d45462269ec63ff7eb0774d7909174b5aac897"
+  },
+  {
+    "path": "dist/assets/tecnologia.mp4",
+    "bytes": 3711068,
+    "sha256": "e6a9b4797a19a8d63ee3113b19a0849f22e382617d7be6e2738fdaf82eff20b4"
+  }
+]

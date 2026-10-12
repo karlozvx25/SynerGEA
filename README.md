@@ -1,162 +1,97 @@
-# SynerGEA Empresarial × Vector Inside
+# SynerGEA · Crecer Conectando
 
-Sitio web y experiencia digital de SynerGEA Empresarial, desarrollado por Vector Inside. Integra narrativa de marca, diseño adaptable, animaciones y audio para comunicar tres pilares: **conexión, crecimiento y pertenencia**.
+Web de presentación de una comunidad empresarial de networking. La experiencia conecta tres ideas: **Conecto, Crezco y Pertenezco**, con una narrativa que une relaciones humanas y evolución tecnológica.
 
-## Estado del proyecto
+[Ver el sitio](https://synergea-crecer-conectando.karlozvx.chatgpt.site) · Acceso privado de Sites, independiente de la visibilidad de este repositorio.
 
-Base conceptual editable para iniciar el desarrollo con el equipo. Esta versión fue reconstruida a partir de la propuesta inicial e incorpora la paleta azul, rosa y morado solicitada. No es todavía un lanzamiento de producción ni un Brand Book aprobado.
+## Estado de la entrega
 
-Incluye:
-- Landing con significado de SYNER + GEA, manifiesto, pilares y cierre comercial de Vector Inside.
-- Esfera generativa en Canvas y adaptación visual para pantallas pequeñas.
-- Audio original de aproximadamente 1:08, con reproducción, pausa y navegación temporal.
-- Seis escenas que se actualizan con la posición del audio.
-- CTA que descarga un brief local; **no envía datos ni tiene backend**.
-- Preferencia de movimiento reducido y navegación por teclado.
+Versión documental del 12 de octubre de 2026. El código corresponde a la publicación de Sites `5835a68ff3d0e7a9010f72b3f08dffa32ba7fea6`. Esta referencia identifica la versión del repositorio de Sites; no es un commit de GitHub.
 
-## Requisitos
+La web está implementada y publicada. Incluye navegación adaptable, animación del símbolo 04, pilares interactivos, videos, preguntas desplegables y un generador descargable de presentación personal. **No incluye afiliación, autenticación propia, pagos, CRM ni integración con la aplicación de SynerGEA.** La aplicación se menciona como parte de la evolución de la comunidad; su enlace y sus funciones específicas están pendientes de confirmar.
 
-- Git para clonar y colaborar.
-- Python 3.9 o superior para la vista previa. No requiere instalar paquetes.
-- Navegador moderno: Chrome, Edge, Firefox o Safari actualizado.
-- Node.js, opcional, para verificar la sintaxis de JavaScript.
+## Ejecutar localmente
 
-No se requiere npm, base de datos, claves de API ni archivo `.env`. Las fuentes de Google Fonts requieren conexión; se utilizan fuentes de respaldo si no están disponibles.
-
-## Ejecutar en desarrollo
+Requiere Python 3 para servir archivos; el sitio no necesita instalación de paquetes ni compilación.
 
 ```sh
-git clone https://github.com/karlozvx25/SynerGEA.git
-cd SynerGEA
-git switch develop
-python3 preview.py
+python3 -m http.server 8000 --directory dist
 ```
 
-En Windows, si `python3` no está disponible:
-
-```powershell
-py -3 preview.py
-```
-
-Abrir **http://127.0.0.1:8766/** y pulsar **Activar experiencia**. El navegador requiere una interacción para iniciar el audio.
-
-Mantener la terminal abierta mientras se revisa la web. Detener el servidor con `Ctrl+C`. Si la página deja de cargar, volver a ejecutar el comando. Esta dirección solo funciona en el equipo donde corre el servidor; no es un enlace público para compartir con el cliente.
-
-El servidor `preview.py` soporta peticiones por rangos de bytes para adelantar y retroceder el audio. Es solo para desarrollo y escucha en `127.0.0.1`.
-
-### Cambiar de puerto
-
-El puerto predeterminado es 8766. Si está ocupado:
+Abrir `http://localhost:8000`. Para validar referencias de recursos y estructura básica:
 
 ```sh
-python3 preview.py --port 8767
+python3 scripts/check_site.py
+node --check dist/script.js
 ```
 
-Abrir entonces http://127.0.0.1:8767/.
-
-También se puede abrir `index.html` directamente en un navegador conservando juntos los archivos y la carpeta `assets`; para el equipo se recomienda usar el servidor.
+No abrir simplemente `index.html` como archivo: las rutas, videos y el comportamiento de descarga se verifican mediante HTTP.
 
 ## Estructura
 
 ```text
-SynerGEA/
-├── index.html                  # Contenido, secciones, diálogos y CTA
-├── styles.css                  # Paleta, tipografía, composición y responsive
-├── script.js                   # Animación Canvas, audio, escenas y brief
-├── preview.py                  # Servidor local con soporte de rangos
-├── assets/
-│   └── narracion-original.wav  # Audio original
-├── .gitignore
-└── README.md
+dist/
+  index.html          Contenido, navegación y estructura accesible
+  style.css           Identidad visual y adaptación de pantallas
+  script.js           Interacciones locales y control de medios
+  assets/             Logo, imágenes, composiciones y videos
+docs/
+  arquitectura.md     Componentes y diagramas de carriles
+  decisiones.md       Decisiones tecnológicas y de marketing
+  experiencia.md      Arquitectura de información y recorrido
+  mapas-de-calor.md   Hipótesis y plan de medición
+  mapa-atencion.html  Mapa esquemático interactivo no medido
+  materiales.md       Inventario, origen y derechos pendientes
+  brandbook/          Evaluación de cuatro propuestas PDF y DOCX
+  previews/           Capturas de revisión
+legacy/initial/      Versión inicial preservada con su audio y README
+preview.py           Servidor de desarrollo previo con rangos de bytes
+scripts/
+  check_site.py       Verificación ligera del paquete
 ```
 
-Los ZIP, HTML autocontenidos, registros y dependencias locales se excluyen del repositorio para evitar duplicados. Los archivos fuente anteriores son la base de edición.
+## Decisiones principales
 
-## Ramas y colaboración
+| Perspectiva | Decisión | Motivo |
+|---|---|---|
+| Marketing | “Crecer Conectando” como eje del hero y cierre | Explicar el crecimiento a través de las relaciones. |
+| Marca | Logotipo 04 Sinergia en capas | Vincular la S, el doble bucle y la integración de capacidades. |
+| Narrativa | Encuentro humano → experiencia → comunidad → tecnología → participación | Explicar el valor antes de pedir una acción. |
+| Visual | Cian, cobalto, violeta y magenta | Continuidad cromática; convergencia en el centro del símbolo. |
+| Tecnología | HTML, CSS y JavaScript sin framework | Adecuado al alcance informativo y a las interacciones locales. |
+| Movimiento | Máscara SVG desde azul a rosa | Revelar el raster existente siguiendo una trayectoria, sin simular que ya hay un vector final. |
+| Medios | Carga al entrar en pantalla y pausa al salir | Limitar transferencias y reproducción simultánea. |
+| Video vertical | Ciudad completa 9:16 a la izquierda | Conservar la composición original y separar texto y video. |
+| Datos | Presentación personal en memoria y descarga local | Dar utilidad sin implementar un sistema de captación inexistente. |
 
-| Rama | Uso |
-| --- | --- |
-| `main` | Base estable y versiones aprobadas. No implica despliegue automático. |
-| `develop` | Integración del trabajo antes de aprobación. |
-| `feature/<nombre>` | Nueva funcionalidad, creada desde `develop` cuando se inicia trabajo. |
-| `fix/<nombre>` | Correcciones, creadas desde `develop`. |
+## Documentación y mapas
 
-Ejemplo:
+- [Arquitectura y carriles del sistema](docs/arquitectura.md)
+- [Decisiones y consecuencias](docs/decisiones.md)
+- [Recorrido del usuario](docs/experiencia.md)
+- [Zonas de atención y medición](docs/mapas-de-calor.md)
+- [Mapa interactivo de hipótesis](docs/mapa-atencion.html): abrir con un servidor HTTP apuntando a la raíz del repositorio.
+- [Materiales y trazabilidad](docs/materiales.md)
+- [Propuestas para el equipo del brandbook](docs/brandbook/SynerGEA_cuatro_propuestas_brandbook.pdf)
 
-```sh
-git switch develop
-git pull --ff-only origin develop
-git switch -c feature/ajustar-sincronizacion
-# Editar y verificar los cambios
-git add index.html styles.css script.js
-git commit -m "feat: ajustar escenas de la narración"
-git push -u origin feature/ajustar-sincronizacion
-```
+**No hay mapas de calor medidos.** No existe instrumentación de clics, desplazamiento o sesiones en el código. El mapa incluido es una evaluación editorial de atención prevista, no una predicción estadística ni evidencia de comportamiento.
 
-Abrir un Pull Request hacia `develop` con descripción, capturas y verificaciones. Una versión aprobada se integra mediante un Pull Request de `develop` a `main`. No subir credenciales ni datos reales de prospectos.
+## Publicación y límites
 
-Este es el flujo recomendado; las protecciones de ramas y revisiones obligatorias aún no están configuradas.
+`dist/` puede servirse desde cualquier alojamiento estático con soporte HTTPS, MIME correctos y entrega de MP4. La publicación actual se realiza en Sites. No se incluye aquí su identificador ni sus credenciales: el código puede mantenerse en GitHub sin acoplarlo al acceso privado del alojamiento.
 
-## Guía de edición
+Las tipografías DM Sans y Manrope se solicitan a Google Fonts. Si ese servicio no responde, se usan las fuentes de reserva. Para una política sin solicitudes a terceros, alojar las fuentes localmente después de revisar sus licencias.
 
-### Diseño y paleta
+Las imágenes y videos proceden de referencias provistas para el proyecto. No prueban que las personas mostradas sean socios de SynerGEA. Confirmar licencia y procedencia de cada recurso antes de reutilizarlo en otras campañas. No se concede una licencia nueva sobre estos materiales en este repositorio.
 
-Editar `styles.css`. Referencias actuales, pendientes de validación contra el Brand Book definitivo:
+## Próximos pasos
 
-| Rol | Color |
-| --- | --- |
-| Fondo azul profundo | `#0B1026` |
-| Azul | `#78A6FF` |
-| Rosa | `#FF83B5` |
-| Morado | `#B28BFA` |
-| Texto claro | `#F5F3FF` |
+1. Confirmar enlace de la aplicación, contacto oficial y condiciones de incorporación.
+2. Construir el vector definitivo del símbolo y especificar tipografía y versiones de reproducción.
+3. Definir un destino real para solicitudes de afiliación si se requiere captación.
+4. Aprobar un plan de analítica y privacidad antes de instrumentar la medición.
+5. Consolidar el CSS acumulado en la exploración y separar contenido de componentes al ampliar el sitio.
 
-Los colores del Canvas están en `draw()` dentro de `script.js`; deben mantenerse alineados con CSS. No introducir nuevamente verdes en esta dirección visual.
+## Colaboración
 
-### Audio y escenas
-
-El archivo original está en `assets/narracion-original.wav`. La constante `scenes` de `script.js` contiene `at` (segundos), `label`, `title` y `detail` para cada escena.
-
-Los puntos de entrada actuales —0, 10, 21, 33, 46 y 58 segundos— son una distribución editorial inicial. **La sincronización palabra por palabra todavía debe afinarse escuchando la locución.** La lógica sigue `audio.currentTime`, también cuando se adelanta o retrocede.
-
-Si se cambia el audio, actualizar la ruta en `index.html` y revisar todos los puntos de entrada. Conservar un original antes de optimizar o convertir archivos.
-
-### CTA comercial
-
-El botón “Quiero esto para mi marca” abre un formulario y descarga un archivo de texto en el dispositivo. No existen envíos de correo, CRM, WhatsApp ni almacenamiento de datos.
-
-Para lanzamiento, definir y aprobar el destino comercial real, implementar el envío y revisar la información de privacidad que corresponda. No presentar el brief descargado como un contacto enviado.
-
-## Verificación antes de un Pull Request
-
-1. Abrir la landing y comprobar encabezado, secciones, formulario y ausencia de errores de consola.
-2. Activar el audio; comprobar pausa, reanudación y avance/retroceso en la barra.
-3. Confirmar que las escenas cambian con el audio y que el cierre permite volver a explorar.
-4. Revisar en escritorio y en móvil, sin desbordamientos ni controles inaccesibles.
-5. Revisar teclado, foco, contraste y preferencia de movimiento reducido.
-6. Descargar un brief de prueba y comprobar su contenido.
-
-Comprobaciones opcionales de sintaxis:
-
-```sh
-node --check script.js
-python3 -m py_compile preview.py
-```
-
-No hay una suite automatizada ni CI configurados en esta base. La reproducción y el cambio de escenas al adelantar se comprobaron en Chrome durante la preparación de la propuesta; cada cambio requiere su propia revisión.
-
-## Publicación y pendientes
-
-El sitio es estático y no necesita compilación. Para publicar, el hosting debe servir `index.html`, `styles.css`, `script.js` y `assets/` con HTTPS y soporte de audio por rangos. No usar `preview.py` como servidor de producción.
-
-No hay hosting, dominio ni despliegue automático configurados desde este repositorio.
-
-Pendientes iniciales:
-- Validar identidad, logotipo, códigos de color y contenidos con SynerGEA.
-- Afinar sincronización de voz y movimiento.
-- Definir destino y funcionamiento del CTA comercial.
-- Optimizar audio y rendimiento manteniendo una copia original.
-- Completar revisión responsive, accesibilidad, metadatos y criterios de aceptación.
-- Definir estrategia de publicación, revisiones y protecciones de ramas.
-
-No se incluye una licencia de código abierto. Acordar con las partes los derechos y permisos de uso de código, audio e identidad antes de distribuir públicamente.
+Se conserva el flujo del repositorio: ramas de trabajo → Pull Request a develop → revisión → Pull Request a main. La versión inicial se preserva en legacy/initial; el index.html de la raíz dirige a la web actual en dist. El servidor previo preview.py sigue disponible para servir el repositorio completo con soporte de rangos. No es un servidor de producción.
