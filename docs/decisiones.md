@@ -8,7 +8,7 @@ Fecha de consolidación: 12 de octubre de 2026. Distingue lo implementado, su ju
 |---|---|---|
 | Sitio estático sin framework | Implementado. La experiencia no requiere backend ni estado compartido. | Despliegue simple; sistemas de socios y pagos requieren otro alcance. |
 | Interacciones en JavaScript nativo | Implementado: menú, pilares, necesidades, dialog y descarga. | Sin dependencias de ejecución; probar al cambiar estructura DOM. |
-| Raster del logo más máscara SVG | Implementado para conservar el concepto 04. | No sustituye el vector definitivo; el archivo raster limita ampliación. |
+| Raster del logo más máscara SVG | Implementado para conservar la variante oficial aportada por el cliente. | No sustituye el vector definitivo; el archivo raster limita ampliación. |
 | Revelado azul a rosa | Implementado tras corregir el barrido vertical inicial. | Una trayectoria curva vincula inicio, cruce y expansión; respetar movimiento reducido. |
 | Videos optimizados | Implementado con H.264, carga por visibilidad y sin audio en las versiones web. | El MP4 evita descargas simultáneas al inicio; autoplay puede depender del navegador. |
 | Ciudad vertical completa | Implementado: 14.4 s, 9:16, izquierda, sin recorte del encuadre. | El texto vive a la derecha en escritorio y debajo en móvil. |
@@ -23,7 +23,7 @@ Fecha de consolidación: 12 de octubre de 2026. Distingue lo implementado, su ju
 |---|---|---|
 | Lema Crecer Conectando | El crecimiento empresarial surge de relaciones sostenidas. | Hero, narrativa y cierre. |
 | Personalidad cercana y profesional | La confianza debe acompañar la innovación. | Textos de escucha, apoyo, aportación y colaboración. |
-| Símbolo 04 | Selección del usuario para la web entre cuatro conceptos. | S en capas y doble bucle; gradiente y centro de convergencia. |
+| Infinito diagonal aprobado | Variante proporcionada y seleccionada por el usuario el 13 de octubre de 2026. | Doble bucle ascendente, cintas en capas y transición azul-violeta-rosa. |
 | Color reducido | Fuente rectora Identidad de Marca y lámina cromática. | Cian #00D2FF, cobalto #0084FF, violeta #9B27B0, magenta #FF1B6B; fondo #06080C. |
 | Tres pilares | Arquitectura estratégica: Conecto, Crezco, Pertenezco. | Pestañas que explican relaciones, aprendizaje y pertenencia. |
 | Formas de la presentación | Revisión del usuario: los diagramas iniciales eran demasiado simples. | Anillo con puente/red; ascensión de cristal; círculo magenta. Solo se presenta la zona ilustrada mediante CSS. |

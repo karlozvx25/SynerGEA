@@ -99,3 +99,7 @@ flowchart TB
 ```
 
 No hay CI/CD de GitHub configurado en este paquete. Subir cambios a GitHub no publica automáticamente en Sites.
+
+## Aplicación de la variante oficial
+
+El PNG original mide 1999 x 1545 px. Un SVG inline con viewBox 580 340 960 850 encuadra el símbolo en el hero, la navegación, la sección de tecnología y el pie. La imagen conserva sus píxeles originales. La mezcla screen integra el fondo negro en la superficie oscura. La máscara animada recorre el bucle azul inferior, el cruce violeta y el bucle rosa superior; el rectángulo final garantiza la visibilidad total. Es una revelación visual, no una reconstrucción geométrica ni un vector definitivo.

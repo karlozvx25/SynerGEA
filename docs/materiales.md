@@ -8,7 +8,7 @@ Los materiales locales fueron proporcionados desde la carpeta del proyecto Syner
 
 | Recursos del sitio | Origen | Tratamiento |
 |---|---|---|
-| logo.png | Concepto 04 de la exploración aprobada para el hero | Extracción generada del símbolo de S en capas, fondo transparente; raster. |
+| logo.png | Variante del logo.png aportada por el cliente y aprobada el 13 de octubre de 2026 | Copia íntegra del PNG original; encuadre mediante SVG inline, sin redibujar ni alterar píxeles. Fondo negro integrado visualmente mediante screen. |
 | pilar-conecto.png | Imagen 8 del PPTX provisto | PNG original extraído; CSS muestra su zona ilustrada. |
 | pilar-crezco.png | Imagen 4 del PPTX provisto | PNG original extraído; CSS muestra su zona ilustrada. |
 | pilar-pertenezco.png | Imagen 12 del PPTX provisto | PNG original extraído; CSS muestra su zona ilustrada. |
@@ -20,7 +20,7 @@ Los materiales locales fueron proporcionados desde la carpeta del proyecto Syner
 | region.mp4 | 12814495-hd_1080_1920_30fps.mp4 | Duración completa 14.4 s; 640 × 1138; encuadre vertical completo dentro de un marco 9:16. |
 | bienvenida.jpg | pexels-rdne-7648472.jpg | Copia de la fotografía aportada. |
 | conexion-digital.jpg | pexels-evija-ciematniece-1914823-35496838.jpg | Copia de la fotografía aportada. |
-| favicon.svg | Construcción específica para el sitio | Icono simplificado de S; no es el vector final del logotipo. |
+| favicon.svg | Construcción anterior conservada | Archivo histórico sin referencia activa; el favicon vigente utiliza logo.png. |
 
 El inventario con tamaños y SHA-256 está en [materiales.json](materiales.json). El hash permite verificar integridad; no prueba propiedad o licencia. Los archivos originales locales no se modificaron. El PPTX completo no se incluye: el sitio utiliza solo sus recursos seleccionados.
 
@@ -36,3 +36,5 @@ El inventario con tamaños y SHA-256 está en [materiales.json](materiales.json)
 ## Revisión antes de reutilización
 
 Confirmar licencias de imágenes, videos, arte del deck y fuentes. Mantener registro de procedencia y restricciones, y evitar republicar los originales sin necesidad. Revisar la distintividad y el vector definitivo del logo antes de usarlo como identidad cerrada.
+
+7. El 13 de octubre de 2026 el cliente reemplazó el símbolo anterior por un infinito diagonal en capas. Esta variante es la selección vigente; el anexo de cuatro propuestas conserva valor histórico.

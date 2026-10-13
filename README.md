@@ -6,9 +6,9 @@ Web de presentación de una comunidad empresarial de networking. La experiencia 
 
 ## Estado de la entrega
 
-Versión documental del 12 de octubre de 2026. El código corresponde a la publicación de Sites `5835a68ff3d0e7a9010f72b3f08dffa32ba7fea6`. Esta referencia identifica la versión del repositorio de Sites; no es un commit de GitHub.
+Versión documental del 13 de octubre de 2026. El código corresponde a la publicación de Sites `d274f4aea2836eec2cdb9f6abadb3185e78976c3`. Esta referencia identifica la versión del repositorio de Sites; no es un commit de GitHub.
 
-La web está implementada y publicada. Incluye navegación adaptable, animación del símbolo 04, pilares interactivos, videos, preguntas desplegables y un generador descargable de presentación personal. **No incluye afiliación, autenticación propia, pagos, CRM ni integración con la aplicación de SynerGEA.** La aplicación se menciona como parte de la evolución de la comunidad; su enlace y sus funciones específicas están pendientes de confirmar.
+La web está implementada y publicada. Incluye navegación adaptable, animación del infinito diagonal aprobado, pilares interactivos, videos, preguntas desplegables y un generador descargable de presentación personal. **No incluye afiliación, autenticación propia, pagos, CRM ni integración con la aplicación de SynerGEA.** La aplicación se menciona como parte de la evolución de la comunidad; su enlace y sus funciones específicas están pendientes de confirmar.
 
 ## Ejecutar localmente
 
@@ -55,7 +55,7 @@ scripts/
 | Perspectiva | Decisión | Motivo |
 |---|---|---|
 | Marketing | “Crecer Conectando” como eje del hero y cierre | Explicar el crecimiento a través de las relaciones. |
-| Marca | Logotipo 04 Sinergia en capas | Vincular la S, el doble bucle y la integración de capacidades. |
+| Marca | Variante oficial: infinito diagonal en capas | Vincular el doble bucle, el movimiento ascendente y la integración de capacidades. |
 | Narrativa | Encuentro humano → experiencia → comunidad → tecnología → participación | Explicar el valor antes de pedir una acción. |
 | Visual | Cian, cobalto, violeta y magenta | Continuidad cromática; convergencia en el centro del símbolo. |
 | Tecnología | HTML, CSS y JavaScript sin framework | Adecuado al alcance informativo y a las interacciones locales. |
@@ -95,3 +95,7 @@ Las imágenes y videos proceden de referencias provistas para el proyecto. No pr
 ## Colaboración
 
 Se conserva el flujo del repositorio: ramas de trabajo → Pull Request a develop → revisión → Pull Request a main. La versión inicial se preserva en legacy/initial; el index.html de la raíz dirige a la web actual en dist. El servidor previo preview.py sigue disponible para servir el repositorio completo con soporte de rangos. No es un servidor de producción.
+
+## Variante oficial aprobada
+
+El infinito diagonal en capas, proporcionado por el cliente el 13 de octubre de 2026, reemplaza el símbolo anterior. Se aplica en el hero, navegación, tecnología, pie y favicon. La animación recorre del azul inferior al rosa superior. Las cuatro propuestas originales se conservan como historial, no como selección vigente. El manual actualizado se entrega en docs/manual/SynerGEA_Manual_tecnico_desarrollo_web.pdf.
